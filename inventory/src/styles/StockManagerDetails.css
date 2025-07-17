@@ -1,0 +1,29 @@
+/* StockManagerDetails.css */
+
+.stock-manager-details {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .stock-manager-details h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .stock-manager-details p {
+    font-size: 18px;
+    color: #666;
+    margin: 8px 0;
+  }
+  
+  .stock-manager-details p span {
+    font-weight: bold;
+    color: #444;
+  }
+  

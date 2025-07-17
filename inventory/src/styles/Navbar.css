@@ -1,0 +1,258 @@
+/* Navbar Styling */
+.navbar {
+  background-color: #34495e;
+  padding: 1.2rem 2.5rem; /* Increased padding */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 1.8rem; /* Slightly larger logo */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.08); /* Refined hover effect */
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2rem; /* Increased gap */
+}
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem; /* Slightly larger font */
+  font-weight: 500;
+  padding: 0.6rem 1.2rem; /* Adjusted padding */
+  border-radius: 8px; /* Slightly more rounded */
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu a i {
+  margin-right: 8px; /* Increased icon spacing */
+}
+
+.navbar-menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* Adjusted underline position */
+  left: 50%;
+  width: 0%;
+  height: 3px; /* Slightly thicker underline */
+  background-color: #f39c12;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-menu a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-menu a.active {
+  background-color: rgba(243, 156, 18, 0.3); /* Slightly stronger active color */
+  border-bottom: 3px solid #f39c12; /* thicker active bottom border */
+  border-radius: 8px 8px 0 0;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.hamburger svg {
+  width: 30px; /* Slightly larger hamburger icon */
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.hamburger:hover svg {
+  transform: scale(1.1);
+}
+
+.mobile-menu {
+  display: none;
+  background-color: #34495e;
+  position: absolute;
+  top: 70px; /* Adjusted mobile menu position */
+  left: 0;
+  right: 0;
+  padding: 1.2rem; /* Increased mobile menu padding */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transform: translateY(-10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu.open {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 1rem; /* Increased mobile menu link padding */
+  font-size: 1.2rem; /* Slightly larger mobile menu font */
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu a i {
+  margin-right: 8px; /* Increased mobile menu icon spacing */
+}
+
+.mobile-menu a:hover {
+  background-color: #2c3e50; /* Darker hover for mobile */
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+      display: none;
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+  .mobile-menu {
+      display: block;
+  }
+
+  .navbar-search {
+      display: none; /* Hide search bar on mobile */
+  }
+}
+
+.logo-image {
+  height: 80px;
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.logo-image:hover {
+  transform: scale(1.15);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 45px; /* Adjusted overall navbar padding */
+}
+
+.navbar-link {
+  font-size: 1.1rem; /* Adjusted link font size */
+  padding: 14px; /* Adjusted link padding */
+}
+
+/* Search Bar */
+.navbar-search {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 6px 12px; /* Adjusted search bar padding */
+  margin-left: 15px; /* Increased search bar margin */
+  border: 1px solid #ddd;
+}
+
+.navbar-search input {
+  border: none;
+  outline: none;
+  padding: 6px;
+  font-size: 1.1rem; /* Adjusted search input font */
+}
+
+.navbar-search .search-icon {
+  color: #34495e;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+/* User Profile & Notifications */
+.navbar-user {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  color: #fff;
+  margin-right: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.profile-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-icon {
+  color: #fff;
+  font-size: 1.6rem; /* Adjusted profile icon size */
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 50px; /* Adjusted profile dropdown position */
+  right: 0;
+  background-color: #34495e;
+  border-radius: 8px;
+  padding: 12px; /* Adjusted profile dropdown padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  z-index: 1001;
+  border: 1px solid #2c3e50;
+}
+
+.profile-dropdown a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px; /* Adjusted profile dropdown link padding */
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  border-radius: 5px; /* Add slight border radius for smoother edges */
+  font-size: 1rem; /* Adjust font size if needed */
+  font-weight: 400; /* Adjust font weight if needed */
+}
+
+.profile-dropdown a i {
+  margin-right: 5px;
+}
+
+.profile-dropdown a:hover {
+  background-color: #2c3e50;
+}
+
+/* Add a subtle border to the profile dropdown */
+.profile-dropdown {
+    border: 1px solid #2c3e50; 
+}

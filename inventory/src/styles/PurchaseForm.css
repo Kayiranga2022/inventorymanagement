@@ -1,0 +1,82 @@
+/* Improved purchaseForm.css */
+.purchase-form {
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto; /* Added margin for better spacing */
+    padding: 30px; /* Increased padding */
+    background-color: #f8f9fa;
+    border-radius: 12px; /* Smoother corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+.purchase-form h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin */
+    font-size: 28px; /* Larger font size */
+    color: #333;
+    font-weight: 600; /* Semi-bold font weight */
+}
+
+.purchase-form div {
+    margin-bottom: 20px; /* Consistent spacing between form elements */
+}
+
+.purchase-form label {
+    display: block; /* Labels on their own line */
+    margin-bottom: 8px; /* Spacing between label and input */
+    font-weight: 500; /* Slightly bolder labels */
+    color: #555;
+}
+
+.purchase-form input,
+.purchase-form select {
+    width: calc(100% - 24px); /* Adjusted width to account for padding */
+    padding: 12px;
+    border: 1px solid #ddd; /* Lighter border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+.purchase-form input:focus,
+.purchase-form select:focus {
+    border-color: #28a745; /* Green focus color */
+    outline: none;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.2); /* Subtle focus shadow */
+}
+
+.purchase-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.purchase-form button[type="button"] { /* Styles the "Add Item" button */
+    background-color: #e9ecef; /* Light gray background */
+    color: #333;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.purchase-form button[type="button"]:hover {
+    background-color: #dee2e6;
+}
+
+.purchase-form button[type="submit"] {
+    width: 100%;
+    padding: 14px; /* Slightly larger padding */
+    background-color: #28a745; /* Green submit button */
+    border: none;
+    color: white;
+    font-size: 18px; /* Slightly larger font */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.purchase-form button[type="submit"]:hover {
+    background-color: #218838; /* Darker green hover */
+}

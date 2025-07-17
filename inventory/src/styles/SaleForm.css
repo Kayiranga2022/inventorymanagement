@@ -1,0 +1,84 @@
+/* Adjusted SaleForm.css */
+.sale-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 15px auto; /* Reduced margin */
+    padding: 25px; /* Reduced padding */
+    background-color: #f8f9fa;
+    border-radius: 10px; /* Slightly less rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduced shadow strength */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sale-form h2 {
+    text-align: center;
+    margin-bottom: 25px; /* Reduced margin */
+    font-size: 24px; /* Reduced font size */
+    color: #333;
+    font-weight: 600;
+}
+
+.sale-form div {
+    margin-bottom: 18px; /* Slightly reduced margin */
+}
+
+.sale-form label {
+    display: block;
+    margin-bottom: 6px; /* Reduced margin */
+    font-weight: 500;
+    color: #555;
+}
+
+.sale-form input,
+.sale-form select {
+    width: calc(100% - 20px); /* Slightly reduced width adjustment */
+    padding: 10px; /* Reduced padding */
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Less rounded corners */
+    font-size: 14px; /* Reduced font size */
+    transition: border-color 0.3s ease;
+}
+
+.sale-form input:focus,
+.sale-form select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.2); /* Reduced focus shadow */
+}
+
+.sale-item {
+    border: 1px solid #eee;
+    padding: 12px; /* Reduced padding */
+    border-radius: 6px; /* Less rounded corners */
+    margin-bottom: 12px; /* Reduced margin */
+    background-color: #fff;
+}
+
+.sale-form button[type="button"] {
+    background-color: #e9ecef;
+    color: #333;
+    border: 1px solid #ddd;
+    margin-top: 8px; /* Reduced margin */
+    padding: 6px 12px; /* reduced button padding */
+    font-size: 14px; /* reduced button font size */
+}
+
+.sale-form button[type="button"]:hover {
+    background-color: #dee2e6;
+}
+
+.sale-form button[type="submit"] {
+    width: 100%;
+    padding: 12px; /* Reduced padding */
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px; /* Reduced font size */
+    border-radius: 6px; /* Less rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sale-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}

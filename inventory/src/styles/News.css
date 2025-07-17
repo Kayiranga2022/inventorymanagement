@@ -1,0 +1,47 @@
+.news-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.news-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.news-icon {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.news-item-icon {
+  margin-right: 5px;
+  color: #666;
+}
+
+.read-more-link {
+  color: #007bff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.read-more-link svg {
+  margin-left: 5px;
+}
+
+.ant-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-card-cover img {
+  height: 200px; /* Adjust as needed */
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.ant-typography {
+  text-align: left;
+}

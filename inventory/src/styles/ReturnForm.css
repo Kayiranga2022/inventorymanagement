@@ -1,0 +1,84 @@
+/* returnForm.css */
+.return-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.return-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #34495e;
+}
+
+.return-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.return-form input,
+.return-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.return-form input:focus,
+.return-form textarea:focus {
+    border-color: #dc3545;
+    outline: none;
+}
+
+.return-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.return-form button:hover {
+    background-color: #c82333;
+}
+
+.return-form .add-item-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.return-form .add-item-button:hover {
+    background-color: #138496;
+}
+
+.return-form .item-inputs {
+    margin-bottom: 15px;
+}
+
+.return-form .item-inputs input {
+    display: inline-block;
+    width: 45%;
+    margin-right: 10%;
+}
+
+.return-form .item-inputs input:last-child {
+    margin-right: 0;
+}

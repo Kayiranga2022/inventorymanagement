@@ -1,0 +1,182 @@
+/* ProductList.css */
+.productListContainer {
+  width: 100%;
+  overflow-x: auto;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+.productListContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Enhanced shadow */
+  margin-top: 70px;
+}
+
+.productListContainer thead {
+  background: linear-gradient(135deg, #00ffdd, #0056b3); /* Gradient header */
+  color: white;
+  font-size: 18px;
+  text-align: left;
+}
+
+.productListContainer th,
+.productListContainer td {
+  padding: 14px 18px; /* Increased padding */
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.productListContainer tbody tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.productListContainer tbody tr:hover {
+  background: #f0f0f0; /* Lighter hover */
+  transition: background 0.3s ease;
+}
+
+.productListContainer button {
+  padding: 10px 15px;
+  margin: 6px;
+  font-size: 15px;
+  font-weight: 600; /* Semi-bold */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.productListContainer button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.productListContainer .editButton {
+  background: linear-gradient(135deg, #ffc107, #e0a800); /* Gradient edit */
+  color: #333;
+}
+
+.productListContainer .deleteButton {
+  background: linear-gradient(135deg, #dc3545, #c82333); /* Gradient delete */
+  color: white;
+}
+
+.addProductButton {
+  background: linear-gradient(135deg, #28a3a7, #218838); /* Gradient add */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 15px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.addProductButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+/* Search Bar Styles */
+.searchContainer {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  background: #f9f9f9; /* Light background */
+  padding: 14px 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18); /* Stronger shadow */
+  border: 1px solid #e0e0e0;
+}
+
+.searchContainer input {
+  padding: 12px;
+  border: 1px solid #c2c2c2;
+  border-radius: 8px;
+  margin-right: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.searchContainer input:focus {
+  border-color: #007bff;
+}
+
+.searchContainer button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient search */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.searchContainer button:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.resetButton {
+  background: linear-gradient(135deg, #6c757d, #5a6268); /* Gradient reset */
+  margin-left: 12px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resetButton:hover {
+  background: linear-gradient(135deg, #5a6268, #495057);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .productListContainer table {
+      font-size: 14px;
+  }
+
+  .productListContainer th,
+  .productListContainer td {
+      padding: 12px 15px;
+  }
+
+  .productListContainer button {
+      padding: 8px 12px;
+      font-size: 14px;
+  }
+
+  .searchContainer {
+      padding: 10px 15px;
+  }
+
+  .searchContainer input,
+  .searchContainer button {
+      padding: 10px;
+      font-size: 14px;
+  }
+}

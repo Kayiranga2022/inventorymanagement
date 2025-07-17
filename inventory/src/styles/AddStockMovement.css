@@ -1,0 +1,62 @@
+/* AddStockMovement.css */
+.add-stock-movement-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-stock-movement-title {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.add-stock-movement-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-stock-movement-input {
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-stock-movement-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-stock-movement-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .add-stock-movement-container {
+    padding: 15px;
+  }
+
+  .add-stock-movement-title {
+    font-size: 20px;
+  }
+
+  .add-stock-movement-input {
+    font-size: 14px;
+  }
+
+  .add-stock-movement-button {
+    font-size: 14px;
+  }
+}

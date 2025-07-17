@@ -1,0 +1,182 @@
+/* StockHistoryListPage.css */
+
+.stock-history-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto; /* Increased margin for better spacing */
+  background: linear-gradient(135deg, #f0f8ff, #e6f7ff); /* Subtle gradient background */
+  padding: 30px; /* Increased padding */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18); /* Enhanced shadow */
+  border-radius: 12px; /* More rounded corners */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stock-history-title {
+  text-align: center;
+  color: #333;
+  font-size: 2.5em; /* Larger title */
+  margin-bottom: 30px; /* Increased margin */
+  font-weight: 700; /* Bold title */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+.loading-message,
+.error-message {
+  text-align: center;
+  font-size: 1.2em; /* Slightly larger messages */
+  font-weight: 600; /* Semi-bold messages */
+  padding: 15px; /* Added padding */
+  border-radius: 8px; /* Rounded corners for messages */
+  margin-bottom: 15px; /* Added margin */
+}
+
+.loading-message {
+  color: #007bff;
+  background-color: #e6f7ff; /* Light blue background */
+}
+
+.error-message {
+  color: #d32f2f; /* Darker red */
+  background-color: #ffebee; /* Light red background */
+}
+
+.stock-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px; /* Increased margin */
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Table shadow */
+  border-radius: 10px; /* Rounded corners for table */
+  overflow: hidden; /* Prevent overflow for rounded corners */
+}
+
+thead {
+  background: linear-gradient(135deg, #3498db, #2980b9); /* Deeper blue gradient */
+  color: white;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.25); /* More prominent header shadow */
+}
+
+th, td {
+  padding: 15px; /* Increased padding */
+  border: 1px solid #e0e0e0; /* Lighter border */
+  text-align: center;
+}
+
+th {
+  text-transform: uppercase;
+  font-weight: 700; /* Bold header text */
+  letter-spacing: 1px; /* Added letter spacing */
+}
+
+tr:nth-child(even) {
+  background: #f0f0f0; /* Lighter alternating rows */
+}
+
+.view-details-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600; /* Semi-bold link */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Added text-shadow transition */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05); /* Subtle link shadow */
+}
+
+.view-details-link:hover {
+  text-decoration: underline;
+  color: #0056b3;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Enhanced hover shadow */
+}
+
+@media (max-width: 768px) {
+  .stock-history-container {
+      padding: 20px;
+  }
+
+  .stock-history-title {
+      font-size: 2em;
+  }
+
+  .stock-history-table th,
+  .stock-history-table td {
+      padding: 10px;
+      font-size: 0.95em;
+  }
+}
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Increased gap */
+  margin-bottom: 30px; /* Increased margin */
+}
+
+.filter-container input {
+  padding: 10px; /* Increased padding */
+  border: 1px solid #ccc;
+  border-radius: 8px; /* More rounded corners */
+  flex: 1 1 200px; /* Increased flex basis */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+.filter-container input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+.filter-container button {
+  padding: 10px 15px; /* Increased padding */
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient button */
+  color: white;
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Increased gap */
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Added transitions */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+.filter-container button:hover {
+  background: linear-gradient(135deg, #0056b3, #004085); /* Darker hover gradient */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.filter-icon,
+.reset-icon {
+  font-size: 1em; /* Slightly larger icons */
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* Increased margin */
+  gap: 15px; /* Increased gap */
+}
+
+.pagination-controls button {
+  padding: 10px 15px; /* Increased padding */
+  border: 1px solid #ddd;
+  border-radius: 8px; /* More rounded corners */
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* Gradient pagination buttons */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease; /* Added transitions */
+  font-weight: 600;
+}
+
+.pagination-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #e0e0e0, #d0d0d0); /* Darker hover gradient */
+  transform: translateY(-2px);
+}
+
+.pagination-controls span {
+  align-self: center;
+  font-weight: 600;
+}

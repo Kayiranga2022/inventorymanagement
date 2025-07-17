@@ -1,0 +1,81 @@
+/* StockManagerForm.css */
+.stock-manager-form-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stock-manager-form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.stock-manager-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stock-manager-input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.stock-manager-input-icon {
+  margin-right: 10px;
+  color: #555;
+}
+
+.stock-manager-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.stock-manager-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.stock-manager-button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stock-manager-button:hover {
+  background: #0056b3;
+}
+
+.stock-manager-button-icon {
+  margin-right: 8px;
+}
+
+@media (max-width: 480px) {
+  .stock-manager-form-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .stock-manager-input,
+  .stock-manager-button {
+    font-size: 14px;
+  }
+}
